@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <header>
+        <h3 id="timer">Time Left:   </h3>
+    </header>
+    <main>
+        <h1>Coding Quiz Challenge</h1>
+        <div id="container" class="hide">
+            <h2>
+                Try to answer the following code related questions with in the time limit. 
+                Keep in mind that incorrect answers will penalize your scoretime by <b>ten 
+                seconds</b>!
+            </h2>
+            <button type="button" id="start" class="button">Start Quiz!</button>
+        </div>
+        <div id="question" class = "hide">
+            <h2></h2>
+        </div>
+        <div id="choices" class = "hide">
+            <button type="button" class="choice" ></button>
+            <button type="button" class="choice" ></button>
+            <button type="button" class="choice" ></button>
+            <button type="button" class="choice" ></button>
+        </div>
+        <h2 id="validating" class = "hide"></h2>
+        <div id="submit-score" class="hide">
+            <h2><b> All done!!</b></h2>
+            <h3></h3>
+            <form>
+                <label for="initials">Enter Initials:</label>
+                <input type="text" id="initials">
+                <button type="button" id="submitForm">Submit</button>
+            </form>
+        </div>
+        <div id="homepage" class="show">
+            <button type="button" id ="play" class="button">Play Quiz!</button>
+            <button type="button" id ="scores" class="button">View Highscores</button>
+            <button type="button" id ="clear" class="button">Clear Highscores</button>
+        </div>
+        <div id="render-scores" class = "hide">
+            <h2>HighScores</h2>
+            <ol type="1" id="scores-list"></ol><br>
+        </div>
+        <h3 class = "hide" id="no-scores">No scores to display</h3>
+        <button type="button" id ="back-button" class="hide">Go back</button>
+        
+        
+        
+     </main>
+     <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
