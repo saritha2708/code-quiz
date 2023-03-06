@@ -139,7 +139,6 @@ function enterInitials() {
 function setScores(event) {
     event.preventDefault();
     nameEntered = inputEl.value;
-    console.log(nameEntered);
     highScores.push({initials : nameEntered, score:score});
     localStorage.setItem("highScores", JSON.stringify(highScores));
     inputEl.value = '';
@@ -153,7 +152,6 @@ function getScores() {
     if(highScores === null){
         highScores = [];
     }
-    console.log(JSON.parse(localStorage.getItem("highScores")));
 }
 
 //renders score on webpage from highest to lowest
@@ -164,7 +162,6 @@ function renderScores() {
     renderScoresDiv.className = "show";
     backButton.className = "show";
     if(highScores.length === 0) {
-        console.log("i am here");
         document.getElementById("no-scores").className = "show";
         return;
     }
